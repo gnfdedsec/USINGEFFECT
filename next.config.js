@@ -1,19 +1,9 @@
-// next.config.js
-
-module.exports = {
-  // คำอธิบายอื่น ๆ ที่คุณอาจมีอยู่
-  // ...
-
-  // ใช้งานโหมดการสร้าง HTML สำหรับ SSG
-  output: {
-    // ตำแหน่งที่เก็บไฟล์ HTML หลังจากการสร้าง
-    // เช่น "dist" หรือ "out" หรือตำแหน่งที่คุณต้องการ
-    dir: 'dist', // สามารถแก้ไขตามความต้องการของคุณ
-
-    // สร้างไฟล์ HTML สำหรับแต่ละ route ของโปรเจค
-    // เมื่อมีการเรียกใช้ "next export"
-    static: false, // ไม่ต้องเปลี่ยนแปลง
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    unoptimized: true,
   },
-
-  // ...
 };
+
+module.exports = nextConfig;
